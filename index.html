@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pretender Piano.ver">
+    <title>Officialhigedandism Prenteder</title>
+    <meta name=" description" content="히게단의 프리텐더">
+    <meta property="og:desscription" content="히게단의 프리텐더">
+    <meta name="keywords" content="오피션히게단디즘 프리텐더"/>
+    <link rel="cannonical" href="https://officialhigedandism.netlify.app/">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">Official Higedandism</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>Official髭男dism</h1>
+                    <p class="hero-description">「ひげが似合う年齢になっても、誰もがドキドキできる音楽を、このメンバーたちとずっと続けていきたい。」</p>
+                    
+                    <!-- Audio Player -->
+                    <div class="audio-player" id="audioPlayer">
+                        <button class="audio-play-btn" id="playBtn" aria-label="Play">
+                            <svg class="icon-play" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                            <svg class="icon-pause" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                                <rect x="6" y="4" width="4" height="16"/>
+                                <rect x="14" y="4" width="4" height="16"/>
+                            </svg>
+                        </button>
+                        <div class="audio-info">
+                            <div class="audio-track-row">
+                                <div class="audio-track-info">
+                                    <span class="audio-title">Pretender</span>
+                                    <span class="audio-artist">Piano.ver</span>
+                                </div>
+                                <div class="volume-control">
+                                    <svg class="volume-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                                        <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                                    </svg>
+                                    <input type="range" id="volumeSlider" class="volume-slider" min="0" max="100" value="60">
+                                </div>
+                            </div>
+                            <div class="audio-progress-wrap">
+                                <div class="audio-progress-bar" id="progressBar">
+                                    <div class="audio-progress-bg"></div>
+                                    <div class="audio-progress" id="progress"></div>
+                                    <div class="audio-progress-handle" id="progressHandle"></div>
+                                </div>
+                                <div class="audio-time">
+                                    <span id="currentTime">0:00</span>
+                                    <span id="duration">0:00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <audio id="audio" preload="auto">
+                               <source src="audio/bgm.mp3" type="audio/mpeg">
+                        </audio>
+
+                    </div>
+
+                    <div class="btn-group">
+                        <a href="#work" class="btn btn-primary">Null</a>
+                        <a href="#contact" class="btn btn-secondary">Null</a>
+                    </div>
+                </div>
+
+                <!-- Hero Visual -->
+                <div class="hero-visual">
+                    <div class="album-showcase">
+                        <div class="album-cover">
+                            <img src="images/01-pretender.jpg" alt="Pretender">
+                            <div class="album-reflection"></div>
+                        </div>
+                        <div class="audio-visualizer" id="visualizer">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        <div class="album-info-card">
+                            <span class="album-badge">Now Playing</span>
+                            <h3>Pretender</h3>
+                            <p>3 tracks • 68 min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="tooplate-musician-script.js"></script>
+</body>
